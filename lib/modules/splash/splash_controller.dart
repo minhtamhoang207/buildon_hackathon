@@ -22,7 +22,7 @@ class SplashController extends GetxController {
         Get.offAllNamed(Routes.INTRO_SCREEN);
       }
     } catch (e) {
-      Get.offAllNamed(Routes.login);
+      Get.offAllNamed(Routes.LOGIN_SCREEN);
     }
   }
 }
