@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:get/get.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-
 import '../controllers/news_screen_controller.dart';
 
 class NewsScreenView extends GetView<NewsScreenController> {
@@ -10,9 +8,12 @@ class NewsScreenView extends GetView<NewsScreenController> {
 
   @override
   Widget build(BuildContext context) {
-    return const WebView(
-      initialUrl: 'https://covidmaps.hanoi.gov.vn/',
-      debuggingEnabled: true,
+    return InAppWebView(
+      initialUrlRequest: URLRequest(url: Uri.parse('https://covidmaps.hanoi.gov.vn/')),
+      onReceivedServerTrustAuthRequest: (controller, challenge) async {
+        //Do some checks here to decide if CANCELS or PROCEEDS
+        return ServerTrustAuthResponse(action: ServerTrustAuthResponseAction.PROCEED);
+      },
     );
   }
 }
