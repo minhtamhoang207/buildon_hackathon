@@ -1,0 +1,55 @@
+name: buildon_hackathon
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #state management
+  get: ^4.6.5
+
+  # network
+  dio: ^4.0.6
+
+  # local storage
+  shared_preferences: ^2.0.15
+
+  #localization facilities
+  intl: 0.17.0
+
+  # UI
+  cupertino_icons: ^1.0.5
+  gap: 2.0.0
+  google_fonts: ^3.0.1
+  flutter_svg: ^1.1.2
+  bot_toast: ^4.0.3
+  lottie: ^1.4.1
+  persistent_bottom_nav_bar_v2: ^4.2.4
+  flutter_keyboard_visibility: ^5.3.0
+  cached_network_image: ^3.2.1
+  image_picker: ^0.8.5+3
+  intro_views_flutter: ^3.2.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner:
+  flutter_gen_runner:
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/lotties/
