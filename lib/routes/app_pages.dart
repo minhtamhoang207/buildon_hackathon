@@ -10,6 +10,8 @@ import '../modules/login_screen/bindings/login_screen_binding.dart';
 import '../modules/login_screen/views/login_screen_view.dart';
 import '../modules/news_screen/bindings/news_screen_binding.dart';
 import '../modules/news_screen/views/news_screen_view.dart';
+import '../modules/profile_screen/bindings/profile_screen_binding.dart';
+import '../modules/profile_screen/views/profile_screen_view.dart';
 import '../modules/sign_up_screen/bindings/sign_up_screen_binding.dart';
 import '../modules/sign_up_screen/views/sign_up_screen_view.dart';
 import '../modules/splash/splash_binding.dart';
@@ -52,6 +54,11 @@ class AppPages {
       name: Routes.NEWS_SCREEN,
       page: () => NewsScreenView(),
       binding: NewsScreenBinding(),
+    ),
+    GetPage(
+      name: Routes.PROFILE_SCREEN,
+      page: () => ProfileScreenView(),
+      binding: ProfileScreenBinding(),
     ),
   ];
 }

@@ -1,3 +1,4 @@
+import 'package:buildon_hackathon/modules/profile_screen/views/profile_screen_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -66,7 +67,7 @@ class DashboardView extends GetView<DashboardController> {
       const NewsScreenView(),
       const Text('TAB 2'),
       const Text('TAB 2'),
-      const Text('TAB 2'),
+      const ProfileScreenView()
     ];
   }
 

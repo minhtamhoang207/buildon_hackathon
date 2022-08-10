@@ -18,4 +18,5 @@ abstract class Routes {
   static const DASHBOARD = '/dashboard';
   static const HOME_SCREEN = '/home-screen';
   static const NEWS_SCREEN = '/news-screen';
+  static const PROFILE_SCREEN = '/profile-screen';
 }
